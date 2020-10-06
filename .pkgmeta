@@ -1,0 +1,8 @@
+package-as: DataStore_Inventory
+
+move-folders:
+ DataStore_Inventory/DataStore_Inventory: DataStore_Inventory
+
+ignore:
+ - LICENCE.md
+ - README.md
