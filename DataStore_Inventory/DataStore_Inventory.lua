@@ -290,7 +290,7 @@ end
 
 local function OnPlayerEquipmentChanged(event, slot)
 	ScanInventorySlot(slot)
-	ScanAverageItemLevel()
+	C_Timer.After(1, ScanAverageItemLevel) -- item level still reports the old ilvl when the event fires
 	addon.ThisCharacter.lastUpdate = time()
 end
 
